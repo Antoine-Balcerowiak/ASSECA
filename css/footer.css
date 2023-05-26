@@ -1,0 +1,53 @@
+
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the footer container */
+.footer-clean {
+    padding: 40px 0;
+    background-color: #f1f1f1;
+}
+
+/* Center the content in the footer container */
+.container {
+    text-align: center;
+}
+
+/* Style the heading in each column */
+.item h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Style the list in each column */
+.item ul {
+    list-style: none;
+}
+
+/* Style the links in the list */
+.item ul li a {
+    color: #666;
+    text-decoration: none;
+    line-height: 1.9;
+    display: block;
+}
+
+/* Add hover effect to the links */
+.item ul li a:hover {
+    color: #000;
+}
+
+/* Adjust the layout for different screen sizes */
+@media (min-width: 768px) {
+    .item {
+        width: 33.3333%;
+        float: left;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+}
