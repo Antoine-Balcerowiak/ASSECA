@@ -29,7 +29,7 @@
                     <div class="col-sm-4 col-md-3 item">
                         <h3>Contact</h3>
                             <a>mail : </a><br>
-                            <a>tel : </a><br>
+                            <a>telephone : </a><br>
                     </div>
                 </div>
             </div>
