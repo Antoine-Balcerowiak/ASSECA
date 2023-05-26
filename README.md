@@ -1,6 +1,1 @@
-"# ASSECA" 
-"# ASSECA" 
-"# ASSECA" 
-"# ASSECA" 
-"# ASSECA" 
 "# asseca" 
