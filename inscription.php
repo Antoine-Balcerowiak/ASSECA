@@ -2,8 +2,9 @@
 <html lang="fr">
 <head>
 	<meta charset="utf-8" />
+	
 	<link rel="stylesheet" href="css/inscription.css" />
-	<?php include 'header.php'; ?>
+	
 </head>
 <body>
 	<h2 class="color-green">Inscription</h2>
@@ -31,10 +32,10 @@
 					<div class="form-group col-md-6 col-sm-6">
 						<input type="text" class="form-control" name="Ville" required placeholder="Ville" />
 					</div>
-				</div>
-				<input type="hidden" name="role" value="eleve">
+				</div>	
 				<div class="col-md-12 col-sm-12 text-center">
 					<button type="submit" class="btn-contact">Terminer</button>
+					<a href="index.php"><button type="button" class="btn-annuler">Annuler</button></a>
 				</div> 
 			</fieldset>
 		</form>

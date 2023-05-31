@@ -8,8 +8,6 @@
     ?>
     <title>Liste Adherents</title>
     <link rel="stylesheet" type="text/css" href="css/adherent.css">
-    <li><a href="Cotipaspaye.php">adherent qui on pas payer</a></li>
-    <li><a href="refreshcoti.php">refresh</a></li>
 </head>
 
     <h1>Liste des Adhérents</h1>
@@ -27,13 +25,12 @@
           <th>Fonction</th>
           <th>Cotisation</th>
           <th>Cotisation payé ?</th>
-          <th>update</th>
         </tr>
     
 
     <?php foreach ($listeAdherent as $adherent ) :?>
 <tr>
-
+<?php if($adherent->paye=='non'): ?>
     <td><?php echo $adherent->id; ?></td>
     <td><?php echo $adherent->nom; ?></td>
     <td><?php echo $adherent->prenom; ?></td>
@@ -47,7 +44,7 @@
     <td><?php echo $adherent->cotisation; ?></td>
     <td><?php echo $adherent->paye; ?>
     <a href="updateCoti.php?id=<?php echo $adherent->id; ?>" >cliquer ici si la personne a payé</a></td>
-    <td> <a href="updateAdh.php?id=<?php echo $adherent->id; ?>" >update</a></td>
+    <?php endif; ?>
 </tr>
 <?php endforeach; ?>
 
