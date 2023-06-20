@@ -1,0 +1,27 @@
+
+  /* Style de la table */
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+
+  /* Style de l'en-tête de la table */
+  .table th {
+    background-color: #57f264;
+    color: #333;
+    font-weight: bold;
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ccc;
+  }
+
+  /* Style des cellules de la table */
+  .table td {
+    padding: 8px;
+    border: 1px solid #ccc;
+  }
+
+
+
+

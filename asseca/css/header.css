@@ -1,0 +1,44 @@
+/* Styles pour le header */
+.header header {
+    background-color:linear-gradient(#58dffa, #45c060,#ffe244,);
+    margin: 10px;
+  }
+  
+  .header h1{
+    color: rgb(250, 250, 15);
+    text-decoration: underline;
+    text-align: center;
+    font-size : 100px;
+    margin: 0;
+  }
+    .header  nav a {
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .header  nav a:hover {
+    text-decoration: underline;
+  }
+
+  
+  .header .right {
+    text-align: center;
+    
+  }
+  
+  .header ul {
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  
+  

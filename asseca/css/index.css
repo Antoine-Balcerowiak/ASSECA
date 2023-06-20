@@ -1,0 +1,12 @@
+body {
+    width:100%;
+    font:14px/1 Arial,sans-serif;
+    background: linear-gradient(#58dffa, #45c060,#ffe244,#ea2f05);
+}
+h2{
+    color: black;
+    text-decoration: underline;
+    text-align: center;
+    font-size : 35px;
+    margin: 0;
+  }
