@@ -1,27 +1,36 @@
 <?php
-require_once('updateAdh.php');
+require_once('formulaire_adh.php');
 require_once("inc/connect-db.php");
-?>
-<?php
+
+
 // à faire sur chaque donnée reçue
+
 $nom = $_GET['nom'];
 $prenom = $_GET['prenom'];
-$login = $_GET['login'];
-$password = $_GET['password'];
-$role = $_GET['role'];
+$mail = $_GET['mail'];
+$NumFixe = $_GET['NumFixe'];
+$NumPortable = $_GET['NumPortable'];
+$NumeroRue = $_GET['NumeroRue'];
+$NomRue = $_GET['NomRue'];
+$CodePostale = $_GET['CodePostale'];
+$NomVille = $_GET['NomVille'];
 
 // on rédige la requête SQL
-$sql = "UPDATE utilisateur set
-nom=:nom,prenom=:prenom,login=:login,password=:password,role=:role
-where id=:id";
+$sql = "UPDATE adherent SET
+nom=:nom, prenom=:prenom, mail=:mail, NumFixe=:NumFixe, NumPortable=:NumPortable, NumeroRue=:NumeroRue,NomRue=:NomRue, CodePostale=:CodePostale,NomVille=:NomVille
+WHERE id=:id";
 try {
 //on prépare la requête avec les données reçues
 $statement = $pdo->prepare($sql);
 $statement->bindParam(':nom', $nom, PDO::PARAM_STR);
 $statement->bindParam(':prenom', $prenom, PDO::PARAM_STR);
-$statement->bindParam(':login', $login, PDO::PARAM_STR);
-$statement->bindParam(':password', $password, PDO::PARAM_STR);
-$statement->bindParam(':role', $role, PDO::PARAM_STR);
+$statement->bindParam(':mail', $mail, PDO::PARAM_STR);
+$statement->bindParam(':NumFixe', $NumFixe, PDO::PARAM_INT);
+$statement->bindParam(':NumPortable', $NumPortable, PDO::PARAM_INT);
+$statement->bindParam(':NumeroRue', $NumeroRue, PDO::PARAM_INT);
+$statement->bindParam(':NomRue', $NomRue, PDO::PARAM_STR);
+$statement->bindParam(':CodePostale', $CodePostale, PDO::PARAM_INT);
+$statement->bindParam(':NomVille', $NomVille, PDO::PARAM_STR);
 $statement->bindParam(':id', $id, PDO::PARAM_INT);
 $statement->execute();
 //On renvoie vers la liste des salaries
@@ -32,4 +41,5 @@ catch(PDOException $e){
 }
 ?>
 <br>
-<a href="adherent" >liste</a>
+<a href="adherent.php" >liste</a>
+

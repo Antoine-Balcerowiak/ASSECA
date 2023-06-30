@@ -9,7 +9,7 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
 // Nouvelle valeur pour la colonne à modifier
 $nouvelleValeur = "oui";
 
-$query = "UPDATE adherent SET paye = :nouvelleValeur WHERE id = :id;";
+$query = "UPDATE adherent SET cotisation = :nouvelleValeur WHERE id = :id;";
 
 try {
     $prep = $pdo->prepare($query);
