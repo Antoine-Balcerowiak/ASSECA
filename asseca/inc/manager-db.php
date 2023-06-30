@@ -28,5 +28,17 @@ function getAdh($id){
     die ("erreur dans la requete ".$e->getMessage());
     }
 }
+function getAllCotinonpaye(){
+    global $pdo;
+    $query = 'SELECT * FROM cotinonpaye ';
+    try {
+    $result = $pdo->query($query)->fetchAll(PDO::FETCH_OBJ);
+    return $result;
+    }
+    catch ( Exception $e ) {
+    die ("erreur dans la requete ".$e->getMessage());
+    }
+}
+
 
 ?>

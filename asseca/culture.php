@@ -1,40 +1,41 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="fr">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/footer.css">
-    
+	<title>Activités éductaives </title>
+    <link rel="stylesheet" href="css/culture.css">
 </head>
+    <body>
+    <a id = "retour" href="index.php">retour à la page précédente</a>
 
-<body>
-    <div class="footer-clean">
-        <footer>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-sm-4 col-md-3 item">
-                        <h3>Adresse</h3>
-                            <a>Moissy</a><br>
-                    </div>
-                    <div class="col-sm-4 col-md-3 item">
-                        <h3>Heure ouverture</h3>
-                            <a>Lundi : </a><br>
-                            <a>Mardi : </a><br>
-                            <a>Mercredi : </a><br>
-                            <a>Jeudi : </a><br>
-                            <a>Vendredi : </a><br>
-                            <a>Samedi : </a><br>
-                            <a>Dimanche : </a><br>
-                    </div>
-                    <div class="col-sm-4 col-md-3 item">
-                        <h3>Contact</h3>
-                            <a>mail : </a><br>
-                            <a>telephone : </a><br>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div>
-</body>
+    <h1 >L'association organise aussi des sorties culturelles : </h1>
+    <br>
 
+    <p>
+    <img src="images/culture3.png" width="500" height="400">
+    <img src="images/culture1.png" width="500" height="400">
+    <br>
+    <h1> Festivités liées à des fêtes religieuse ou Organisation de concerts musicaux </h1>
+
+    </p>
+
+    <br>
+
+    <p>
+    <img src="images/culture4.png" width="500" height="350">
+    <img src="images/culture2.png" width="500" height="350">
+    </p>
+
+    <br>
+
+    <h1>Sorties (Ski,montagne,parc aquatique, ...) ou Visites de sites historiques (musées,parc,…) </h1>
+
+
+
+
+
+    
+  
+    
+    </body>
+</html>

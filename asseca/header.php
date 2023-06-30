@@ -18,10 +18,10 @@
                 <ul>
                     <li><a href="index.php">Accueil</a></li>
                     <li><a href="sport.php">Activités sportives</a></li>
-                    <li><a href="index.php">Activités éducatives</a></li>
-                    <li><a href="index.php">Activités Culturelles</a></li>
-                    <li><a href="adherent.php">liste adhérent</a></li> 
-                    <li><a href="inscription.php">Inscription</a></li> 
+                    <li><a href="education.php">Activités éducatives</a></li>
+                    <li><a href="culture.php">Activités Culturelles</a></li>
+                    <li><a href="adherent.php">liste adhérent</a></li>
+                    <li><a href="cotinonpaye.php">liste des cotisation non payé</a></li>
                 </ul>
             </nav>
             

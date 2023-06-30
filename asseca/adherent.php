@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/adherent.css">
     <li><a href="Cotipaspaye.php">adherent qui on pas payer</a></li>
     <li><a href="index.php">retour à la page précédente</a></li>
+    <li><a href="refreshcoti.php">refresh a faire en fin de mois</a></li>
 </head>
 
     <h1>Liste des Adhérents</h1>
@@ -23,7 +24,7 @@
           <th>Numéro de rue</th>
           <th>Nom de la rue </th>
           <th>Nom de la ville</th>
-          <th>modification</th>
+          <th>Cotisation payé ?</th>
         </tr>
     
 
@@ -38,7 +39,8 @@
     <td><?php echo $adherent->NumRue; ?></td>
     <td><?php echo $adherent->NomRue; ?></td>
     <td><?php echo $adherent->Ville; ?></td>
-    <td> <a href="formulaire_adh.php?id=<?php echo $adherent->id; ?>" >update</a></td>
+    <td><?php echo $adherent->cotisation; ?>
+    <a href="updateCoti.php?id=<?php echo $adherent->id; ?>" > ( cliquer ici si la personne a payé ) </a></td>
 </tr>
 <?php endforeach; ?>
 
